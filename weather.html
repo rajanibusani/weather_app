@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather API</title>
+  <link rel="stylesheet" type="text/css" href="weather.css" />
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDISy64VENLvv2mJtL4_VBKCmqfYmhv4Iw&libraries=&v=weekly"
+    defer></script>
+</head>
+
+<body>
+  <header>
+    <h1>Weather App</h1>
+  </header>
+  
+  <div class="main_container">
+     <div class="search_container">  
+     <input type= "text" class= "search_input" name= "city" placeholder="Search By City Name">
+     <div class="buttons">
+      <button class="weather_button">Get Weather</button>
+      <button class="location_button" >Use My Location</button>
+      </div>
+      <p class="error"></p>
+      </div> 
+
+<div class="info_container">
+    <h2 class="location"></h2>
+    <h2 class="temp"></h1>
+    <div class="conditions">
+      <div>
+      <h3 class="wind"></h3>
+      <h3 class="cloudy"></h3>
+      <h3 class="sunrise"></h3>
+      <h3 class="sunset"></h3>
+    </div>
+      <div class="img_container">
+        <img class="icon">
+      </div>
+     </div>
+  
+    <div id="map"></div>
+</div>
+
+</div>
+<footer>
+ <p>copyright@app developed by rajanibusani</p>
+</footer>
+</body>
+<script src="weather.js"></script>
+
+</html>
